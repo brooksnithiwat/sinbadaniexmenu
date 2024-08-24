@@ -76,8 +76,8 @@
         
     </div>
     <div class="inputArea" onchange="createWheel()">
-        <textarea rows="20" cols="30" >สุ่มโฟโต้4x6
-ป้อนขนม
+        <textarea rows="20" cols="30" >
+สั่งอะไรก็ได้
 นวดไหล่ 10 ครั้ง
 ลูบหัว
 สุ่มโฟโต้4x6
@@ -228,7 +228,7 @@ kabedon
             draw();
 
             
-            maxRotation = (360 * 6) - itemDegs['สุ่มโฟโต้4x6'].endDeg + 10
+            maxRotation = randomRange(360 * 3, 360 * 6);
             itemDegs = {}
             console.log("max",maxRotation)
             console.log(itemDegs);
